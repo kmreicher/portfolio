@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<!-- TODO -->
+<!-- <body class="{{ if ne $.Site.Params.defaultTheme "light" -}} dark-theme {{- end -}}"> -->
+
+<body>
+  <div class="container">
+    {{ partial "header.html" . }}
+    <p>Header</p>
+
+    <div class="content">
+      {{ block "main" . }}{{ end }}
+    </div>
+
+    <!-- TODO -->
+    {{ block "footer" . }}
+    {{ partial "footer.html" .}}
+    {{ end }}
+  </div>
+
+  {{ partial "javascript.html" . }}
+</body>
+
+</html>
