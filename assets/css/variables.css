@@ -1,0 +1,9 @@
+:root {
+  --light-theme-background: white;
+  --light-theme-color: black;
+  --light-theme-border: #dcdcdc;
+
+  --dark-theme-background: #292a2d;
+  --dark-theme-color: #a9a9b3;
+  --dark-theme-border: #4a4b50;
+}

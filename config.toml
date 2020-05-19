@@ -37,6 +37,8 @@ disableHugoGeneratorInject = false
 [author]
   name = "Kacper Reicher"
 
+
+
 # TODO
 [blackfriday]
   hrefTargetBlank = true
@@ -58,8 +60,7 @@ disableHugoGeneratorInject = false
 
   homeSubtitle = "Hi, I'm Kacper Reicher"
 
-  # TODO
-  customCSS = []
+  customCSS = ["css/variables.css", "css/style.css", "css/footer.css", "css/header.css", "css/menu.css"]
   customJS  = []
 
   defaultTheme = "dark"
