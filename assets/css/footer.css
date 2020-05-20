@@ -30,6 +30,11 @@
   padding: 0 5px;
 }
 
+.footer__content > span > a {
+  color: var(--font-hyperlink-color);
+  text-decoration: none;
+}
+
 @media (max-width: 900px) {
   .footer__inner {
     flex-direction: column;

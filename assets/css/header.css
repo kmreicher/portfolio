@@ -1,5 +1,5 @@
 .header {
-  background: #252627;
+  background: var(--header-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,9 +7,9 @@
   padding: 20px;
 }
 
-.header.dark-theme {
+/* .header.dark-theme {
   background: #252627;
-}
+} */
 
 .header__right {
   display: flex;

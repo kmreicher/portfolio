@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    line-height: 1.6;
     scroll-behavior: smooth;
 }
 
@@ -19,19 +18,19 @@ body {
     line-height: 1.54;
     text-rendering: optimizeLegibility;
     
-    background-color: var(--light-theme-background);
+    background-color: var(--background-color);
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: 100%;
 
-    color: var(--dark-theme-color);
+    color: var(--font-text-color);
 }
 
-body.dark-theme {
+/* body.dark-theme {
     background-color: var(--dark-theme-background);
     color: var(--dark-theme-color);
-}
+} */
 
 h2, h3, h4, h5, h6 {
     display: flex;

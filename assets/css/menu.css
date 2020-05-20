@@ -24,9 +24,9 @@
 }
 
 .menu__inner > li > a {
-  display: inline-block;
-  margin-right: 15px;
-  text-decoration: none;
+  /* display: inline-block; */
+  /* margin-right: 15px; */
+  /* text-decoration: none;  */
 }
 
 .menu__inner > li > a:last-of-type {
