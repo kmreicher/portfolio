@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+.footer__content > span > a:hover {
+  color: green;
+}
+
 @media (max-width: 900px) {
   .footer__inner {
     flex-direction: column;

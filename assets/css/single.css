@@ -1,0 +1,152 @@
+.post {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.post-date:after {
+  content: '—';
+}
+
+.post-title {
+  font-size: 2.625rem;
+  margin: 0 0 20px;
+}
+
+.post-tags {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  opacity: .5;
+}
+
+.post-tags a {
+  text-decoration: none;
+}
+
+.post-content {
+  margin-top: 30px;
+}
+
+.post-cover {
+  border-radius: 8px;
+  margin: 40px -50px;
+  width: 860px;
+  max-width: 860px;
+}
+
+.post-info {
+  margin-top: 30px;
+  font-size: .8rem;
+  line-height: normal;
+}
+
+.post-info p {
+  margin: .8rem 0;
+}
+
+.post-info a:hover {
+  border-bottom: 1px solid white;
+}
+
+.post-info svg {
+  margin-right: .8rem;
+}
+
+.post-info .tag {
+  margin-right: .5rem;
+}
+
+.post-info .tag::before {
+  content: '#';
+}
+
+.post-info .feather {
+  display: inline-block;
+  vertical-align: -.125em;
+  width: 1em;
+  height: 1em;
+}
+
+.post .flag {
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination__title {
+  display: flex;
+  text-align: center;
+  position: relative;
+  margin: 30px 0 20px;
+}
+
+.pagination__title-h {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 10px;
+  background: var(--background-color);
+  color: var(--font-text-color);
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1em;
+  z-index: 1;
+}
+
+.pagination__title hr {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 15px;
+  z-index: 0;
+}
+
+.pagination__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__buttons a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: grey; /* TODO */
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  max-width: 40%;
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+}
+
+.button + .button {
+  margin-left: 10px;
+}
+
+.button a {
+  display: flex;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button__text {
+  
+}
