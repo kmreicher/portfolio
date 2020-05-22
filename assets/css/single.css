@@ -148,5 +148,15 @@
 }
 
 .button__text {
-  
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button.next .button__icon {
+  margin-left: 8px;
+}
+
+.button.previous .button__icon {
+  margin-right: 8px;
 }
