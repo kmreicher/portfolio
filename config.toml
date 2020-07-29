@@ -1,106 +1,15 @@
-baseURL = "http://kmreicher.dev/"
-languageCode = "en-us"
-title = "Portfolio"
+# The URL the site will be built for
+base_url = "https://kmreicher.dev"
 
-paginate = 10 # TODO
-rssLimit  = 10
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
 
-# copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
 
-# TODO
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
 
-buildDrafts  = false
-buildFuture  = false
-buildExpired = false
-
-# TODO
-canonifyURLs = true
-
-# TODO
-enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
-
-[permalinks]
-  posts = "/posts/:year/:month/:title/"
-
-[author]
-  name = "Kacper Reicher"
-
-
-
-# TODO
-[blackfriday]
-  hrefTargetBlank = true
-
-[taxonomies]
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
-
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
-
-  description = "Portfolio"
-  keywords = ""
-  images = [""]
-
-  homeSubtitle = "Hi, I'm Kacper Reicher"
-
-  customCSS = ["css/variables.css", "css/style.css", "css/footer.css", "css/header.css", "css/menu.css"]
-  customJS  = []
-
-  defaultTheme = "dark"
-  themeColor = "#252627"
-
-[params.favicon.color]
-  mask = "#252627"
-  msapplication = "#252627"
-  theme = "#252627"
-
-[params.logo]
-  logoText     = "$ cd /home/"
-  logoHomeLink = "/"
-
-[[params.social]]
-  name = "twitter"
-  url  = "https://twitter.com/"
-
-[[params.social]]
-  name = "email"
-  url  = "mailto:nobody@example.com"
-
-[[params.social]]
-  name = "github"
-  url  = "https://github.com/"
-
-[[params.social]]
-  name = "linkedin"
-  url  = "https://www.linkedin.com/"
-
-[[params.social]]
-  name = "stackoverflow"
-  url  = "https://www.stackoverflow.com/"
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+[extra]
+# Put all your custom variables here
