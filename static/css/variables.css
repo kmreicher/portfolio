@@ -1,0 +1,42 @@
+:root {
+  --primary: #f8481c;
+  --red: red;
+  --text-color: #411b33;
+  --bg-color: #fbecda;
+  --black: #212529;
+  --white: #fdfdfd;
+  --dark-gray: #343334;
+  --gray: #616060;
+  --light-gray: #ccc;
+  --lighter-gray: #f6f6f6;
+  --font-base: "Fira Sans",
+               system-ui,
+               -apple-system,
+               segoe ui,
+               roboto,
+               ubuntu,
+               helvetica,
+               cantarell,
+               noto sans,
+               sans-serif;
+  --font-headings: "Merriweather Sans",
+                   system-ui,
+                   -apple-system,
+                   segoe ui,
+                   roboto,
+                   ubuntu,
+                   helvetica,
+                   cantarell,
+                   noto sans,
+                   sans-serif;
+  --font-monospace: "Fira Code",
+                    menlo,
+                    monaco,
+                    lucida console,
+                    liberation mono,
+                    dejavu sans mono,
+                    bitstream vera sans mono,
+                    courier new,
+                    monospace, serif;
+  --boder-radius: 0.2rem;
+}

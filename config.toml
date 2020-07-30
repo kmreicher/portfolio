@@ -1,5 +1,6 @@
-# The URL the site will be built for
 base_url = "https://kmreicher.dev"
+title = "Kacper Reicher"
+description = "Personal blog"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -12,4 +13,8 @@ highlight_code = false
 build_search_index = false
 
 [extra]
-# Put all your custom variables here
+menu_links = [
+ { url = "$BASE_URL/", name = "Home" },
+ { url = "$BASE_URL/posts/", name = "Blog" },
+ { url = "$BASE_URL/contact/", name = "Contact" },
+]

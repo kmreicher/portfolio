@@ -1,0 +1,68 @@
+{% import "macros/head.html" as head -%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%- block meta -%}
+      {{ head::meta() }}
+    {%- endblock meta -%}
+
+    <link rel="stylesheet"
+          href="{{ get_url(path="css/base.css", trailing_slash=false) | safe }}">
+  </head>
+ 
+  <body>
+    <header>
+      <div class="site-name"><h1>Kacper Reicher</h1></div>
+      
+      <!-- <div class="site-description">
+        <p>{{ config.description }}</p>
+      </div> -->
+      
+      <nav>
+        <div class="links">
+          {% for menu_link in config.extra.menu_links %}
+          {% set link_url = menu_link.url | replace(from="$BASE_URL", to=config.base_url) %}
+          <a {% if current_url and current_url == link_url %} class="active" {% endif %} href="{{ link_url | safe }}">
+            {{ menu_link.name }}
+          </a>
+          {% endfor %}
+        </div> <!-- links -->
+      </nav>
+    </header>
+
+    <article>
+      {% block content %}
+      {% endblock %}
+    </article>
+
+    <footer>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://github.com/kmreicher" title="GitHub">
+              <i data-feather="github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/kmreicher" title="Twitter">
+              <i data-feather="twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ get_url(path="index.xml", trailing_slash=false) | safe }}"
+               title="{{ config.title }}">
+              <i data-feather="rss"></i>
+            </a>
+          </li>
+        </ul>
+      </div> <!-- social -->
+
+      <p>
+        © {{ config.title }} {{ now() | date(format="%Y") }}
+        <br>
+        Powered by <a target="_blank" href="https://getzola.org/">Zola</a>
+      </p>
+    </footer>
+  </body>
+</html>
